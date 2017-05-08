@@ -1,0 +1,278 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Payson\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-23 10:46+0100\n"
+"PO-Revision-Date: 2012-04-23 10:47+0100\n"
+"Last-Translator: Niklas <niklas@krokedil.se>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_x;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-payson-direct.php:13
+msgid "Payson Direct"
+msgstr "Paysondirekt"
+
+#: ../class-payson-direct.php:71
+#: ../class-payson-invoice.php:107
+msgid "Enable/Disable"
+msgstr "Aktivera/avaktivera"
+
+#: ../class-payson-direct.php:73
+msgid "Enable Payson"
+msgstr "Aktivera Payson"
+
+#: ../class-payson-direct.php:77
+#: ../class-payson-invoice.php:113
+msgid "Title"
+msgstr "Titel"
+
+#: ../class-payson-direct.php:79
+#: ../class-payson-direct.php:85
+#: ../class-payson-invoice.php:115
+#: ../class-payson-invoice.php:121
+msgid "This controls the title which the user sees during checkout."
+msgstr "Det här kontrollerar vilken titel kunden ser i kassan."
+
+#: ../class-payson-direct.php:80
+#: ../gateway-payson.php:87
+msgid "Payson"
+msgstr "Payson"
+
+#: ../class-payson-direct.php:83
+#: ../class-payson-invoice.php:119
+msgid "Description"
+msgstr "Beskrivning"
+
+#: ../class-payson-direct.php:86
+msgid "Direct payment via Payson. Payson cooperates with Visa / Mastercard and the online banks Swedbank, Handelsbanken, SEB and Nordea."
+msgstr "Betala direkt med Payson. Payson samarbetar med Visa/Mastercard och internetbankerna Swedbank, Handelsbanken, SEB och Nordea."
+
+#: ../class-payson-direct.php:89
+#: ../class-payson-invoice.php:125
+msgid "Payson email address"
+msgstr "Payson e-postadress"
+
+#: ../class-payson-direct.php:91
+#: ../class-payson-invoice.php:127
+msgid "Please enter your Payson email address; this is needed in order to take payment!"
+msgstr "Uppge den e-postadress du använder för Payson. Detta behövs för att du ska kunna ta betalt."
+
+#: ../class-payson-direct.php:95
+#: ../class-payson-invoice.php:131
+msgid "Agent ID"
+msgstr "Agent ID"
+
+#: ../class-payson-direct.php:97
+#: ../class-payson-invoice.php:133
+msgid "Please enter your Payson Agent ID; this is needed in order to take payment!"
+msgstr "Uppge ditt Payson Agent ID. Detta behövs för att du ska kunna ta betalt."
+
+#: ../class-payson-direct.php:101
+#: ../class-payson-invoice.php:137
+msgid "MD5"
+msgstr "MD5"
+
+#: ../class-payson-direct.php:103
+#: ../class-payson-invoice.php:139
+msgid "Please enter your Payson MD5-Hash; this is needed in order to take payment!"
+msgstr "Uppge din Payson MD5-hash. Detta behövs för att du ska kunna ta betalt."
+
+#: ../class-payson-direct.php:107
+msgid "Payson Guarantee"
+msgstr "Paysongaranti"
+
+#: ../class-payson-direct.php:110
+msgid "<br/>Select whether Payson Guarantee is offered or not. More information about Payson Guarantee <a href=\"https://www.payson.se/tj%C3%A4nster/paysongaranti\" target=\"_blank\">can be found here</a>."
+msgstr "<br/>Välj om Paysongaranti skall erbjudas eller ej. Mer information om Paysongaranti <a href=\"https://www.payson.se/tj%C3%A4nster/paysongaranti\" target=\"_blank\">hittar du här</a>."
+
+#: ../class-payson-direct.php:114
+#: ../class-payson-invoice.php:143
+msgid "Language"
+msgstr "Språk"
+
+#: ../class-payson-direct.php:117
+#: ../class-payson-invoice.php:146
+msgid "Locale of pages displayed by Payson during payment."
+msgstr "Språk på sidor som visas av Payson under betalning."
+
+#: ../class-payson-direct.php:121
+#: ../class-payson-invoice.php:156
+msgid "Debug"
+msgstr "Debug"
+
+#: ../class-payson-direct.php:123
+#: ../class-payson-invoice.php:158
+msgid "Enable logging (<code>woocommerce/logs/payson.txt</code>)"
+msgstr "Aktivera fel-loggning (<code>woocommerce/logs/payson.txt</code>)"
+
+#: ../class-payson-direct.php:245
+#: ../class-payson-invoice.php:430
+msgid "Thank you for your order."
+msgstr "Tack för din order."
+
+#: ../class-payson-invoice.php:13
+#: ../class-payson-invoice.php:116
+msgid "Payson Invoice"
+msgstr "Paysonfaktura"
+
+#: ../class-payson-invoice.php:54
+#, php-format
+msgid "The Payson Invoice Fee handling has changed since version 1.3. Please visit <a href=\"%1$s\"> the Payson Invoice settings page</a> to make changes."
+msgstr "Hanteringen av fakturaavgift för Paysonfaktura har ändrats sedan version 1.3. Besök <a href=\"%1$s\"> inställningssidan för Paysonfaktura</a> för uppdateringar."
+
+#: ../class-payson-invoice.php:56
+#, php-format
+msgid "<a class=\"submitdelete\" href=\"%1$s\"> Hide this message</a>"
+msgstr "<a class=\"submitdelete\" href=\"%1$s\"> Dölj det här meddelandet</a>"
+
+#: ../class-payson-invoice.php:109
+msgid "Enable Payson Invoice"
+msgstr "Aktivera Paysonfaktura"
+
+#: ../class-payson-invoice.php:122
+msgid "Payson Invoice - pay within 10 days."
+msgstr "Paysonfaktura - betala inom 10 dagar."
+
+#: ../class-payson-invoice.php:150
+msgid "Invoice Fee"
+msgstr "Fakturaavgift"
+
+#: ../class-payson-invoice.php:152
+msgid "Create a hidden (simple) product that acts as the invoice fee. Enter the ID number in this textfield. The price must be in the range 0 to 30 SEK. Leave blank to disable. "
+msgstr "Skapa en dold (enkel) produkt som agerar fakturaavgift. Ange ID-numret i det här textfältet. Faktureringsavgiften måste vara mellan 0 till 30 SEK. Lämna tomt för att avaktivera."
+
+#: ../class-payson-invoice.php:178
+msgid "Order Total must be minimum 30 SEK to pay with Payson Invoice"
+msgstr "Ordersumman måste vara minst 30 SEK för att betala med Paysonfaktura"
+
+#: ../class-payson-invoice.php:280
+msgid "Shipping cost"
+msgstr "Fraktkostnad"
+
+#: ../class-payson-invoice.php:297
+msgid "Discount"
+msgstr "Rabatt"
+
+#: ../class-payson-invoice.php:418
+#, php-format
+msgid "An invoice fee of %1$s %2$s will be added to your order."
+msgstr "En fakturaavgift om %1$s %2$s tillkommer på din order."
+
+#: ../gateway-payson.php:96
+msgid "Choose Swedish Krona or Euro as currency in Pricing Options and Sweden or Finland as Base Country to enable the Payson Gateway."
+msgstr "Välj Svenska kronor eller Euro som Valuta och Sverige eller Finland som Basland för att aktivera Payson."
+
+#: ../gateway-payson.php:104
+msgid "Payson works by sending the user to <a href=\"http://www.payson.se\">Payson</a> to enter their payment information. With Payson your customers can pay by credit card, via instant bank transactions and by invoice. Note that Payson will only take payments in Swedish Krona and Euros and must have Sweden or Finland set as Base Country. Payson Invoice only works if currency is set to Swedish Krona."
+msgstr "Payson fungerar genom att skicka vidare användaren till <a href=\"http://www.payson.se\">Payson</a> för att ange sina betalningsdetaljer. Med Payson kan dina kunder betala med kreditkort, genom banktransaktioner och via faktura. Notera att Payson tar endast betalningar i svenska kronor och Euros och måste ha Sverige eller Finland angett som Basland. Paysonfaktura fungerar endast om valutan är satt till svenska kronor."
+
+#: ../gateway-payson.php:228
+msgid "Payson Direct payment completed. Payson Transaction Reference: "
+msgstr "Payson direktbetalning genomförd. Transaction Reference: "
+
+#: ../gateway-payson.php:235
+#, php-format
+msgid "Payson Direct payment failed. Payson Transaction Reference: %s, Payment status: %s"
+msgstr "Payson direktbetalning misslyckades. Payson Transaction Reference: %s, Payment status: %s"
+
+#: ../gateway-payson.php:240
+#, php-format
+msgid "Payson Direct payment, unexpected status value. Payson Transaction Reference: %s, Payment status: %s"
+msgstr "Payson direktbetalning, oväntat statusvärde. Payson Transaction Reference: %s, Payment status: %s"
+
+#: ../gateway-payson.php:255
+msgid "Payson Invoice created. Payson Transaction Reference: "
+msgstr "Paysonfaktura skapad. Payson Transaction Reference: "
+
+#: ../gateway-payson.php:262
+#, php-format
+msgid "Payson Invoice payment failed. Payson Transaction Reference: %s, Payment status: %s"
+msgstr "Betalning med Paysonfaktura misslyckades. Payson Transaction Reference: %s, Payment status: %s"
+
+#: ../gateway-payson.php:267
+#, php-format
+msgid "Payson Invoice payment, unexpected status value. Payson Transaction Reference: %s, Payment status: %s"
+msgstr "Betalning med Paysonfaktura, oväntat statusvärde. Payson Transaction Reference: %s, Payment status: %s"
+
+#: ../gateway-payson.php:284
+msgid "Payson Guarantee payment created. When the order is shipped you must visit your Payson account and confirm that the order has shipped. Payson Transaction Reference: "
+msgstr "Betalning med Paysongaranti skapad. När ordern skickas måste du besöka ditt Payson-konto och bekräfta att orden har skickats. Payson Transaction Reference: "
+
+#: ../gateway-payson.php:296
+#, php-format
+msgid "Payson Guarantee payment failed. Payson Transaction Reference: %s, Payment status: %s"
+msgstr "Betalning med Paysongaranti misslyckades. Payson Transaction Reference: %s, Payment status: %s"
+
+#: ../gateway-payson.php:301
+#, php-format
+msgid "Payson Guarantee payment, unexpected status value. Payson Transaction Reference: %s, Payment status: %s"
+msgstr "Betalning med Paysongaranti, oväntat statusvärde. Payson Transaction Reference: %s, Payment status: %s"
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:147
+msgid "WooThemes Updates"
+msgstr ""
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:167
+msgid "WooThemes Plugin Updater"
+msgstr ""
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:174
+msgid "WooThemes Username"
+msgstr ""
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:178
+msgid "WooThemes Password"
+msgstr ""
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:187
+msgid "Login"
+msgstr ""
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:238
+msgid "Switch WooThemes Account"
+msgstr ""
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:240
+#, php-format
+msgid "You are currently logged in as %1$s. To switch to a different WooThemes account, please fill in the login details below."
+msgstr ""
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:243
+msgid "Update your Plugins"
+msgstr ""
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:250
+msgid "Login Error"
+msgstr ""
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:252
+msgid "The login details supplied are invalid. Please try again."
+msgstr ""
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:262
+msgid "Enable WooThemes Plugin Updates."
+msgstr ""
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:264
+#, php-format
+msgid "Please <a href=\"%1$s\">login</a> to enable automatic plugin updates."
+msgstr ""
+
+#: ../woo-includes/class-woothemes-plugin-updater.php:277
+msgid "Hide This Message"
+msgstr "Dölj det här meddelandet"
+
+#~ msgid ""
+#~ "Enter an amount, e.g. 25.5. Leave blank to disable. Must be in the range "
+#~ "0 to 30 SEK."
+#~ msgstr ""
+#~ "Ange en summa, ex 25.5. Lämna tomt för att inaktivera. Måste vara inom "
+#~ "beloppen 0 till 30 SEK."
+
+#~ msgid "Payson Credit Card"
+#~ msgstr "Payson kreditkort"

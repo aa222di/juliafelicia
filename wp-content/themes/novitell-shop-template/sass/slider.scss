@@ -1,0 +1,51 @@
+/*---------------------------------------------------- SLIDER ----------------------------------------------------*/
+/*
+
+
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+@import 'variables';
+@import 'mixins';
+
+.nivo-caption {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: $secondary-color !important;
+    color: #fff;
+    width: 100%;
+    font-family: $heading-font !important;
+    text-align: center;
+    padding: rhythm(0.5) rhythm(0.5) rhythm(1.5) rhythm(0.5) !important;
+    opacity: 0.8;
+    @include adjust-font-size-to($body-fz);
+    @include adjust-leading-to(1);
+    font-weight: 500;
+  }
+
+
+    .metaslider.metaslider-234 {
+        background-color: $secondary-color;
+    }
+    .nivo-controlNav {
+        position: absolute;
+        bottom: -(rhythm(0.25));
+    }
+
+
+  .slider-wrapper {
+    position: relative;
+
+  }
+  body .metaslider {
+    z-index: 9;
+  }
+
+@include susy-media($desktop) {
+  .nivo-caption {
+    @include adjust-font-size-to($h3-fz);
+    @include adjust-leading-to(1);
+    font-weight: 500;
+  }
+}
+

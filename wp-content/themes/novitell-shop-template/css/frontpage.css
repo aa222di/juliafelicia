@@ -1,0 +1,237 @@
+/*---------------------------------------------------- PRODUCTS ----------------------------------------------------*/
+/*
+
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*---------------------------------------------------- VARIABLES ----------------------------------------------------*/
+/*
+1. COLORS
+2. FONTS
+3. MEASURES
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*$susy: (
+  columns: 12,
+  gutters: 1/4,
+); */
+/*---------------------------------------------------- COLORS ----------------------------------------------------*/
+/* Menu & header colors */
+/* Font colors */
+/* Footer */
+/* Cart */
+/*---------------------------------------------------- FONTS ----------------------------------------------------*/
+/* Sizes */
+/*---------------------------------------------------- MEASURES ----------------------------------------------------*/
+/* UTILS */
+/* ELEMENTS */
+/*---------------------------------------------------- PRODUCT CATALOGUE ----------------------------------------------------*/
+/* NOVITELL SPECIAL CATEGORIES */
+/* line 13, ../sass/frontpage.scss */
+.novitell-special-product-categories {
+  overflow: hidden;
+  *zoom: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 19, ../sass/frontpage.scss */
+a[class^="novitell-special-product-categories__container--"], a[class*=" novitell-special-product-categories__container--"] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 33vw;
+  display: block;
+  opacity: 1;
+  transition: opacity .5s ease;
+  position: relative;
+}
+/* line 30, ../sass/frontpage.scss */
+a[class^="novitell-special-product-categories__container--"]:hover, a[class*=" novitell-special-product-categories__container--"]:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+/* line 33, ../sass/frontpage.scss */
+a[class^="novitell-special-product-categories__container--"]:hover .novitell-special-product-categories__title, a[class*=" novitell-special-product-categories__container--"]:hover .novitell-special-product-categories__title {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* line 38, ../sass/frontpage.scss */
+.novitell-special-product-categories__container--female {
+  background-image: url("../images/background-female.jpg");
+  order: 2;
+}
+
+/* line 43, ../sass/frontpage.scss */
+.novitell-special-product-categories__container--man {
+  background-image: url("../images/background-man.jpg");
+  order: 1;
+}
+
+/* line 48, ../sass/frontpage.scss */
+.novitell-special-product-categories__container--child {
+  background-image: url("../images/background-child.jpg");
+  order: 3;
+}
+
+/* line 53, ../sass/frontpage.scss */
+.novitell-special-product-categories__box {
+  position: absolute;
+  left: 1.5em;
+  right: 1.5em;
+  top: 45%;
+  text-align: center;
+}
+
+/* line 61, ../sass/frontpage.scss */
+.novitell-special-product-categories__title {
+  font-size: 1.3125em;
+  line-height: 2.28571em;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.375em;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  transition: background-color .5s ease;
+  line-height: 1.5em;
+}
+
+/* SECTION TITLE */
+/* line 84, ../sass/frontpage.scss */
+.section-title {
+  padding: 1.5em;
+  color: #fff;
+  margin-right: -99em;
+  margin-left: -99em;
+  padding-left: 99em;
+  padding-right: 99em;
+  position: relative;
+  background-color: #000;
+}
+
+/* NOVITELL FEATURED PRODUCTS */
+@media (min-width: 768px) {
+  /* line 97, ../sass/frontpage.scss */
+  .novitell-puff-featured-products__list--odd, .novitell-puff-featured-products__list--even {
+    display: flex;
+  }
+}
+/* line 102, ../sass/frontpage.scss */
+.novitell-puff-featured-products__list--odd {
+  display: flex;
+}
+
+/* line 105, ../sass/frontpage.scss */
+.novitell-puff-featured-products__list--odd, .novitell-puff-featured-products__list--even {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* line 110, ../sass/frontpage.scss */
+.novitell-puff-featured-products__list--even .novitell-puff-featured-products__product {
+  width: 50%;
+  float: left;
+}
+
+/* line 114, ../sass/frontpage.scss */
+.novitell-puff-featured-products__product {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* line 119, ../sass/frontpage.scss */
+.novitell-puff-featured-products__list--even .novitell-puff-featured-products__product {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+
+/* line 127, ../sass/frontpage.scss */
+.novitell-puff-featured-products__puff-image {
+  position: relative;
+  z-index: 7;
+  opacity: 1;
+  transition: opacity .5s ease-out;
+}
+
+/* line 134, ../sass/frontpage.scss */
+.novitell-puff-featured-products__product-image {
+  position: absolute;
+  top: -100%;
+}
+
+/* line 141, ../sass/frontpage.scss */
+.novitell-puff-featured-products__short-description {
+  position: absolute;
+  width: 100%;
+  padding: 0.75em;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  transition: bottom .5s ease-out;
+  background-color: rgba(15, 167, 219, 0.8);
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 1.5em;
+}
+/* line 155, ../sass/frontpage.scss */
+.novitell-puff-featured-products__short-description:before, .novitell-puff-featured-products__short-description:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 300px solid transparent;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+}
+/* line 166, ../sass/frontpage.scss */
+.novitell-puff-featured-products__short-description:after {
+  bottom: -15px;
+  border-top: 15px solid rgba(15, 167, 219, 0.8);
+}
+/* line 170, ../sass/frontpage.scss */
+.novitell-puff-featured-products__short-description:before {
+  top: -15px;
+  border-bottom: 15px solid rgba(15, 167, 219, 0.8);
+}
+
+/* line 176, ../sass/frontpage.scss */
+.novitell-puff-featured-products__link {
+  display: block;
+}
+/* line 179, ../sass/frontpage.scss */
+.novitell-puff-featured-products__link:hover .novitell-puff-featured-products__product-image {
+  top: 0;
+}
+/* line 182, ../sass/frontpage.scss */
+.novitell-puff-featured-products__link:hover .novitell-puff-featured-products__short-description {
+  bottom: 0;
+}
+/* line 185, ../sass/frontpage.scss */
+.novitell-puff-featured-products__link:hover .novitell-puff-featured-products__puff-image {
+  opacity: 0;
+}
+/* line 189, ../sass/frontpage.scss */
+.novitell-puff-featured-products__link img {
+  display: block;
+}

@@ -1,0 +1,354 @@
+@import 'variables';
+@import 'grids';
+@import 'mixins';
+
+.woocommerce-active .site-header {
+  background-color: $header-background-color;
+  font-family: $menu-font;
+}
+
+/* TOP WIDET CONTAINER */
+.top-zone-widget-container {
+  margin-left: -99em;
+  margin-right: -99em;
+  font-weight: 600;
+  padding: rhythm(0.5) 99em rhythm(0.5) 99em;
+  @include adjust-font-size-to($tiniest-fz);
+  background-color: $purple;
+  color: #fff;
+  text-align: center;
+}
+
+/* SITE HEADER */
+.woocommerce-active .site-header {
+  padding-top: 0;
+  .custom-logo-link {
+    @include resetMargin();
+    margin: rhythm(1) 0 rhythm(0.75) 0;
+    img {
+      max-height: 80px;
+      width: auto;
+    }
+  }
+  .container {
+    border-bottom: none;
+  }
+
+  /* MENU TOGGLE */
+  button.menu-toggle, button.menu-toggle:hover, button.menu-toggle:focus {
+    background-color: transparent;
+    outline: none;
+  }
+  button.menu-toggle {
+    font-family: $menu-font;
+    color: $menu-font-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top:rhythm(2);
+    @include adjust-font-size-to($h5-fz);
+
+  }
+  button.menu-toggle:after, button.menu-toggle:before, button.menu-toggle span:before {
+    background-color: $menu-font-color;
+  }
+
+  /* HANDHELD NAV */
+  .handheld-navigation {
+    margin-right: -99em;
+    margin-left: -99em;
+    padding-left: 99em;
+    padding-right: 99em;
+    .menu-item {
+      margin-right: -99em;
+      margin-left: -99em;
+      padding-left: 99em;
+      padding-right: 99em;
+      background-color: $green;
+      border-top: 1px solid lighten($green, 5);
+      border-bottom: 1px solid darken($green, 5);
+    }
+
+    a {
+      color: #fff;
+    }
+    .menu-item a:before {
+      display: none;
+    }
+  }
+}
+
+/* Main site area */
+main.site-main {
+
+  margin-top: gutter();
+
+}
+
+/* Special case for margin on homepage. */
+body.home{
+
+  main.site-main {
+    margin-top: 0;
+
+  }
+}
+
+
+
+/* SUB CATEGORIES NAV  & BREADCRUMBS*/
+body .woocommerce-breadcrumb {
+  margin-bottom: gutter();
+  @include adjust-font-size-to($tiniest-fz);
+  padding-bottom: rhythm(0.5);
+  padding-top: rhythm(0.5);
+  background-color: $green;
+  //color: darken($green, 20);
+  color:#fff;
+  font-weight: 400;
+  margin-bottom: 0;
+  a {
+    //color: darken($green, 20);
+    color:#fff;
+    font-weight: 500;
+  }
+}
+
+.subcategories-menu {
+  @include stretch();
+  margin-bottom: 0;
+  background-color: $green;
+}
+
+.subcategories-menu__item {
+  display: inline-block;
+}
+
+.subcategories-menu__link {
+  color: #fff;
+  display: block;
+  padding: rhythm(0.75) rhythm(.5);
+  &:hover {
+    background-color: darken($green, 10);
+  }
+}
+
+.subcategories-menu__link--selected {
+  background-color: darken($green, 10);
+}
+
+
+@include susy-media($desktop) {
+
+  /* SEARCH WIDGET */
+  .search-icon {
+    padding: rhythm(0.5);
+    &:before {
+      color: $menu-font-color;
+      font-size: 1.1em;
+      font-family: 'FontAwesome';
+      content: "\f002";
+      position: relative;
+      top: -2px;
+    }
+    &:hover  {
+      cursor: pointer;
+      &:before {
+        color: $green;
+      }
+    }
+  }
+
+  .header-widget-region {
+    form {
+      margin-bottom: 0;
+      @include adjust-font-size-to($h4-fz);
+      @include adjust-leading-to(1);
+      &:before {
+      }
+      .search-field {
+        box-shadow: none;
+        background-color: transparent;
+        border: none;
+      }
+    }
+  }
+
+  /*----------------------SITE HEADER LAYOUT (MAIN AND SECONDARY NAV PLUS CART)-------------------------*/
+
+
+  .woocommerce-active .site-header {
+
+    .top-zone-widget-container {
+      @include resetMargin();
+      @include resetPadding();
+      @include span(last 6 of 12);
+      padding: rhythm(0.5) 0 rhythm(0.5) 0;
+      color: $purple;
+      text-align: right;
+      background-color: #fff;
+    }
+
+    .custom-logo-link {
+
+
+      @include span(first 3 of 12);
+      margin-right: 0;
+      max-width: 300px;
+      img {
+        max-height: 80px;
+        width: auto;
+      }
+
+    }
+
+    .container {
+      border-bottom: 2px solid #b7b7b7;
+    }
+
+    .site-header-cart {
+      &:hover .widget_shopping_cart {
+        left: auto;
+        right: 0;
+      }
+      .cart-contents {
+        padding-top: rhythm(0.4);
+        padding-bottom: 0;
+        .count {
+          display: none;
+        }
+
+      }
+      a {
+        color: $menu-font-color;
+      }
+      .buttons {
+        .wc-forward {
+          @include button($green);
+        }
+        .button.checkout.wc-forward {
+          @include button($purple);
+        }
+      }
+    }
+
+    .widget_shopping_cart {
+      width: 250px;
+      padding-top: rhythm(2);
+      border: none;
+    }
+    .widget_shopping_cart_content {
+      border: 1px solid #ddd;
+      border-top: 2px solid $purple;
+      position: relative;
+      @include shadow();
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -15px;
+        left: 105px;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 15px solid $purple;
+      }
+
+    }
+
+
+/*--------------------PRIMARY NAVIGATION---------------------*/
+
+
+    .storefront-primary-navigation {
+      @include resetMargin();
+      @include resetPadding();
+      clear: none;
+      @include span(last 9 of 12);
+      margin-top: rhythm(1.75);
+      background-color: $menu-background-color;
+
+
+      ul.nav-menu {
+        text-align: right;
+        > li.menu-item {
+          margin: 0;
+          > a {
+            color: $menu-font-color;
+            font-size: 1.2em;
+            padding: rhythm(0.3) rhythm(0.3);
+            font-weight: 600;
+            transition: color 0.5s ease;
+            text-transform: uppercase;
+            &:hover {
+              color: $menu-font-hover-color;
+            }
+          }
+          &:first-of-type {
+            > a {
+              padding-left: 0;
+            }
+          }
+
+          &:last-of-type {
+            border-right: 2px solid #b7b7b7;
+            padding-right: rhythm();
+          }
+        }
+      }
+    }
+
+    /*--------------------SECONDARY NAVIGATION---------------------*/
+
+    .secondary-navigation {
+      @include resetMargin();
+      @include span(first 6 of 12);
+      
+      .menu {
+        float: none;
+        font-size: 1em;
+        a {
+          @include resetPadding();
+          padding: rhythm(0.5) rhythm(0.5) rhythm(0.5) 0;
+          font-weight: 600;
+          text-decoration: underline;
+          color: #666;
+
+          @include adjust-font-size-to($tiniest-fz);
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+  }
+
+  /* NAV  recheck this*/
+  .main-navigation {
+
+    .menu, .nav-menu {
+      li.menu-item-has-children > a:after, li.page_item_has_children > a:after {
+        margin-left: 0.5em !important;
+      }
+    }
+
+    ul.sub-menu {
+      background-color: $submenu-background-color;
+      border: 3px solid $menu-background-color;
+      border-radius: 0 0 5px 5px;
+      a {
+        font-family: $menu-font;
+        @include adjust-font-size-to($h5-fz);
+        padding-left: rhythm(0.5);
+        color: $submenu-font-color;
+        &:hover {
+          color: $submenu-font-color;
+        }
+      }
+    }
+  }
+  .main-navigation ul.menu ul li a, .main-navigation ul.nav-menu ul li a {
+    @include adjust-font-size-to($h5-fz);
+  }
+}

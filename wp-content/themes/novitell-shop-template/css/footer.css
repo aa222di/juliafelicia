@@ -1,0 +1,61 @@
+/*---------------------------------------------------- VARIABLES ----------------------------------------------------*/
+/*
+1. COLORS
+2. FONTS
+3. MEASURES
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*$susy: (
+  columns: 12,
+  gutters: 1/4,
+); */
+/*---------------------------------------------------- COLORS ----------------------------------------------------*/
+/* Menu & header colors */
+/* Font colors */
+/* Footer */
+/* Cart */
+/*---------------------------------------------------- FONTS ----------------------------------------------------*/
+/* Sizes */
+/*---------------------------------------------------- MEASURES ----------------------------------------------------*/
+/* UTILS */
+/* ELEMENTS */
+/* line 6, ../sass/footer.scss */
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+/* line 11, ../sass/footer.scss */
+.site-footer .footer-widgets {
+  border: none;
+}
+/* line 18, ../sass/footer.scss */
+.site-footer .widget_nav_menu .menu-item {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+/* line 20, ../sass/footer.scss */
+.site-footer .widget_nav_menu .menu-item:before {
+  display: none;
+}
+/* line 26, ../sass/footer.scss */
+.site-footer a {
+  color: #fff !important;
+  text-decoration: underline;
+  font-weight: normal;
+}
+/* line 30, ../sass/footer.scss */
+.site-footer a:before {
+  display: none;
+}
+/* line 35, ../sass/footer.scss */
+.site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6 {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  /* line 42, ../sass/footer.scss */
+  .footer-widgets {
+    padding-top: 2em;
+  }
+}

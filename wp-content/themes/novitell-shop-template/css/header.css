@@ -1,0 +1,429 @@
+/*---------------------------------------------------- VARIABLES ----------------------------------------------------*/
+/*
+1. COLORS
+2. FONTS
+3. MEASURES
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*$susy: (
+  columns: 12,
+  gutters: 1/4,
+); */
+/*---------------------------------------------------- COLORS ----------------------------------------------------*/
+/* Menu & header colors */
+/* Font colors */
+/* Footer */
+/* Cart */
+/*---------------------------------------------------- FONTS ----------------------------------------------------*/
+/* Sizes */
+/*---------------------------------------------------- MEASURES ----------------------------------------------------*/
+/* UTILS */
+/* ELEMENTS */
+/* line 5, ../sass/header.scss */
+.woocommerce-active .site-header {
+  background-color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+/* TOP WIDET CONTAINER */
+/* line 11, ../sass/header.scss */
+.top-zone-widget-container {
+  margin-left: -99em;
+  margin-right: -99em;
+  font-weight: 600;
+  padding: 0.75em 99em 0.75em 99em;
+  font-size: 0.75em;
+  line-height: 2em;
+  background-color: #b24298;
+  color: #fff;
+  text-align: center;
+}
+
+/* SITE HEADER */
+/* line 23, ../sass/header.scss */
+.woocommerce-active .site-header {
+  padding-top: 0;
+  /* MENU TOGGLE */
+  /* HANDHELD NAV */
+}
+/* line 25, ../sass/header.scss */
+.woocommerce-active .site-header .custom-logo-link {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin: 1.5em 0 1.125em 0;
+}
+/* line 28, ../sass/header.scss */
+.woocommerce-active .site-header .custom-logo-link img {
+  max-height: 80px;
+  width: auto;
+}
+/* line 33, ../sass/header.scss */
+.woocommerce-active .site-header .container {
+  border-bottom: none;
+}
+/* line 38, ../sass/header.scss */
+.woocommerce-active .site-header button.menu-toggle, .woocommerce-active .site-header button.menu-toggle:hover, .woocommerce-active .site-header button.menu-toggle:focus {
+  background-color: transparent;
+  outline: none;
+}
+/* line 42, ../sass/header.scss */
+.woocommerce-active .site-header button.menu-toggle {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 3em;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+/* line 51, ../sass/header.scss */
+.woocommerce-active .site-header button.menu-toggle:after, .woocommerce-active .site-header button.menu-toggle:before, .woocommerce-active .site-header button.menu-toggle span:before {
+  background-color: #000;
+}
+/* line 56, ../sass/header.scss */
+.woocommerce-active .site-header .handheld-navigation {
+  margin-right: -99em;
+  margin-left: -99em;
+  padding-left: 99em;
+  padding-right: 99em;
+}
+/* line 61, ../sass/header.scss */
+.woocommerce-active .site-header .handheld-navigation .menu-item {
+  margin-right: -99em;
+  margin-left: -99em;
+  padding-left: 99em;
+  padding-right: 99em;
+  background-color: #079c73;
+  border-top: 1px solid #08b485;
+  border-bottom: 1px solid #068461;
+}
+/* line 71, ../sass/header.scss */
+.woocommerce-active .site-header .handheld-navigation a {
+  color: #fff;
+}
+/* line 74, ../sass/header.scss */
+.woocommerce-active .site-header .handheld-navigation .menu-item a:before {
+  display: none;
+}
+
+/* Main site area */
+/* line 81, ../sass/header.scss */
+main.site-main {
+  margin-top: 4.34783%;
+}
+
+/* Special case for margin on homepage. */
+/* line 90, ../sass/header.scss */
+body.home main.site-main {
+  margin-top: 0;
+}
+
+/* SUB CATEGORIES NAV  & BREADCRUMBS*/
+/* line 99, ../sass/header.scss */
+body .woocommerce-breadcrumb {
+  margin-bottom: 4.34783%;
+  font-size: 0.75em;
+  line-height: 2em;
+  padding-bottom: 0.75em;
+  padding-top: 0.75em;
+  background-color: #079c73;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+/* line 109, ../sass/header.scss */
+body .woocommerce-breadcrumb a {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* line 116, ../sass/header.scss */
+.subcategories-menu {
+  padding-right: 99em;
+  padding-left: 99em;
+  margin-right: -99em;
+  margin-left: -99em;
+  margin-bottom: 0;
+  background-color: #079c73;
+}
+
+/* line 122, ../sass/header.scss */
+.subcategories-menu__item {
+  display: inline-block;
+}
+
+/* line 126, ../sass/header.scss */
+.subcategories-menu__link {
+  color: #fff;
+  display: block;
+  padding: 1.125em 0.75em;
+}
+/* line 130, ../sass/header.scss */
+.subcategories-menu__link:hover {
+  background-color: #056b4f;
+}
+
+/* line 135, ../sass/header.scss */
+.subcategories-menu__link--selected {
+  background-color: #056b4f;
+}
+
+@media (min-width: 768px) {
+  /* SEARCH WIDGET */
+  /* line 143, ../sass/header.scss */
+  .search-icon {
+    padding: 0.75em;
+  }
+  /* line 145, ../sass/header.scss */
+  .search-icon:before {
+    color: #000;
+    font-size: 1.1em;
+    font-family: 'FontAwesome';
+    content: "\f002";
+    position: relative;
+    top: -2px;
+  }
+  /* line 153, ../sass/header.scss */
+  .search-icon:hover {
+    cursor: pointer;
+  }
+  /* line 155, ../sass/header.scss */
+  .search-icon:hover:before {
+    color: #079c73;
+  }
+
+  /* line 162, ../sass/header.scss */
+  .header-widget-region form {
+    margin-bottom: 0;
+    font-size: 1.3125em;
+    line-height: 2.28571em;
+    line-height: 1.5em;
+  }
+  /* line 168, ../sass/header.scss */
+  .header-widget-region form .search-field {
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+  }
+
+  /*----------------------SITE HEADER LAYOUT (MAIN AND SECONDARY NAV PLUS CART)-------------------------*/
+  /* line 179, ../sass/header.scss */
+  .woocommerce-active .site-header {
+    /*--------------------PRIMARY NAVIGATION---------------------*/
+    /*--------------------SECONDARY NAVIGATION---------------------*/
+  }
+  /* line 181, ../sass/header.scss */
+  .woocommerce-active .site-header .top-zone-widget-container {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 47.82609%;
+    float: right;
+    margin-right: 0;
+    padding: 0.75em 0 0.75em 0;
+    color: #b24298;
+    text-align: right;
+    background-color: #fff;
+  }
+  /* line 191, ../sass/header.scss */
+  .woocommerce-active .site-header .custom-logo-link {
+    width: 21.73913%;
+    float: left;
+    margin-right: 4.34783%;
+    margin-right: 0;
+    max-width: 300px;
+  }
+  /* line 197, ../sass/header.scss */
+  .woocommerce-active .site-header .custom-logo-link img {
+    max-height: 80px;
+    width: auto;
+  }
+  /* line 204, ../sass/header.scss */
+  .woocommerce-active .site-header .container {
+    border-bottom: 2px solid #b7b7b7;
+  }
+  /* line 209, ../sass/header.scss */
+  .woocommerce-active .site-header .site-header-cart:hover .widget_shopping_cart {
+    left: auto;
+    right: 0;
+  }
+  /* line 213, ../sass/header.scss */
+  .woocommerce-active .site-header .site-header-cart .cart-contents {
+    padding-top: 0.6em;
+    padding-bottom: 0;
+  }
+  /* line 216, ../sass/header.scss */
+  .woocommerce-active .site-header .site-header-cart .cart-contents .count {
+    display: none;
+  }
+  /* line 221, ../sass/header.scss */
+  .woocommerce-active .site-header .site-header-cart a {
+    color: #000;
+  }
+  /* line 225, ../sass/header.scss */
+  .woocommerce-active .site-header .site-header-cart .buttons .wc-forward {
+    background-color: #079c73;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+  }
+  /* line 35, ../sass/_mixins.scss */
+  .woocommerce-active .site-header .site-header-cart .buttons .wc-forward:hover {
+    background-color: #068461;
+    color: #fff;
+  }
+  /* line 228, ../sass/header.scss */
+  .woocommerce-active .site-header .site-header-cart .buttons .button.checkout.wc-forward {
+    background-color: #b24298;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+  }
+  /* line 35, ../sass/_mixins.scss */
+  .woocommerce-active .site-header .site-header-cart .buttons .button.checkout.wc-forward:hover {
+    background-color: #9f3b88;
+    color: #fff;
+  }
+  /* line 234, ../sass/header.scss */
+  .woocommerce-active .site-header .widget_shopping_cart {
+    width: 250px;
+    padding-top: 3em;
+    border: none;
+  }
+  /* line 239, ../sass/header.scss */
+  .woocommerce-active .site-header .widget_shopping_cart_content {
+    border: 1px solid #ddd;
+    border-top: 2px solid #b24298;
+    position: relative;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  /* line 244, ../sass/header.scss */
+  .woocommerce-active .site-header .widget_shopping_cart_content:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 105px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 15px solid #b24298;
+  }
+  /* line 263, ../sass/header.scss */
+  .woocommerce-active .site-header .storefront-primary-navigation {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    clear: none;
+    width: 73.91304%;
+    float: right;
+    margin-right: 0;
+    margin-top: 2.625em;
+    background-color: #fff;
+  }
+  /* line 272, ../sass/header.scss */
+  .woocommerce-active .site-header .storefront-primary-navigation ul.nav-menu {
+    text-align: right;
+  }
+  /* line 274, ../sass/header.scss */
+  .woocommerce-active .site-header .storefront-primary-navigation ul.nav-menu > li.menu-item {
+    margin: 0;
+  }
+  /* line 276, ../sass/header.scss */
+  .woocommerce-active .site-header .storefront-primary-navigation ul.nav-menu > li.menu-item > a {
+    color: #000;
+    font-size: 1.2em;
+    padding: 0.45em 0.45em;
+    font-weight: 600;
+    transition: color 0.5s ease;
+    text-transform: uppercase;
+  }
+  /* line 283, ../sass/header.scss */
+  .woocommerce-active .site-header .storefront-primary-navigation ul.nav-menu > li.menu-item > a:hover {
+    color: #079c73;
+  }
+  /* line 288, ../sass/header.scss */
+  .woocommerce-active .site-header .storefront-primary-navigation ul.nav-menu > li.menu-item:first-of-type > a {
+    padding-left: 0;
+  }
+  /* line 293, ../sass/header.scss */
+  .woocommerce-active .site-header .storefront-primary-navigation ul.nav-menu > li.menu-item:last-of-type {
+    border-right: 2px solid #b7b7b7;
+    padding-right: 1.5em;
+  }
+  /* line 303, ../sass/header.scss */
+  .woocommerce-active .site-header .secondary-navigation {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 47.82609%;
+    float: left;
+    margin-right: 4.34783%;
+  }
+  /* line 307, ../sass/header.scss */
+  .woocommerce-active .site-header .secondary-navigation .menu {
+    float: none;
+    font-size: 1em;
+  }
+  /* line 310, ../sass/header.scss */
+  .woocommerce-active .site-header .secondary-navigation .menu a {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding: 0.75em 0.75em 0.75em 0;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #666;
+    font-size: 0.75em;
+    line-height: 2em;
+  }
+  /* line 318, ../sass/header.scss */
+  .woocommerce-active .site-header .secondary-navigation .menu a:hover {
+    text-decoration: none;
+  }
+
+  /* NAV  recheck this*/
+  /* line 331, ../sass/header.scss */
+  .main-navigation .menu li.menu-item-has-children > a:after, .main-navigation .menu li.page_item_has_children > a:after, .main-navigation .nav-menu li.menu-item-has-children > a:after, .main-navigation .nav-menu li.page_item_has_children > a:after {
+    margin-left: 0.5em !important;
+  }
+  /* line 336, ../sass/header.scss */
+  .main-navigation ul.sub-menu {
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 0 0 5px 5px;
+  }
+  /* line 340, ../sass/header.scss */
+  .main-navigation ul.sub-menu a {
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-left: 0.75em;
+    color: #2c2d33;
+  }
+  /* line 345, ../sass/header.scss */
+  .main-navigation ul.sub-menu a:hover {
+    color: #2c2d33;
+  }
+
+  /* line 351, ../sass/header.scss */
+  .main-navigation ul.menu ul li a, .main-navigation ul.nav-menu ul li a {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}

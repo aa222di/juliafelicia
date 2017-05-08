@@ -1,0 +1,89 @@
+/*---------------------------------------------------- SLIDER ----------------------------------------------------*/
+/*
+
+
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*---------------------------------------------------- VARIABLES ----------------------------------------------------*/
+/*
+1. COLORS
+2. FONTS
+3. MEASURES
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*$susy: (
+  columns: 12,
+  gutters: 1/4,
+); */
+/*---------------------------------------------------- COLORS ----------------------------------------------------*/
+/* Menu & header colors */
+/* Font colors */
+/* Footer */
+/* Cart */
+/*---------------------------------------------------- FONTS ----------------------------------------------------*/
+/* Sizes */
+/*---------------------------------------------------- MEASURES ----------------------------------------------------*/
+/* UTILS */
+/* ELEMENTS */
+/* line 10, ../sass/slider.scss */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #b24298 !important;
+  color: #fff;
+  width: 100%;
+  font-family: "Raleway", sans-serif !important;
+  text-align: center;
+  padding: 0.75em 0.75em 2.25em 0.75em !important;
+  opacity: 0.8;
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+/* line 27, ../sass/slider.scss */
+.metaslider.metaslider-234 {
+  background-color: #b24298;
+}
+
+/* line 30, ../sass/slider.scss */
+.nivo-controlNav {
+  position: absolute;
+  bottom: -0.375em;
+}
+
+/* line 36, ../sass/slider.scss */
+.slider-wrapper {
+  position: relative;
+}
+/* line 38, ../sass/slider.scss */
+.slider-wrapper:after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-size: 100% 100%;
+  height: 100px;
+  bottom: -50px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-image: url("../images/triangles.png");
+}
+
+/* line 53, ../sass/slider.scss */
+body .metaslider {
+  z-index: 9;
+}
+
+@media (min-width: 768px) {
+  /* line 58, ../sass/slider.scss */
+  .nivo-caption {
+    font-size: 1.5em;
+    line-height: 2em;
+    line-height: 1.5em;
+    font-weight: 500;
+  }
+}

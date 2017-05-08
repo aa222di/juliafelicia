@@ -1,0 +1,70 @@
+/*---------------------------------------------------- NEWSLETTER ----------------------------------------------------*/
+/*
+
+
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*---------------------------------------------------- VARIABLES ----------------------------------------------------*/
+/*
+1. COLORS
+2. FONTS
+3. MEASURES
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*$susy: (
+  columns: 12,
+  gutters: 1/4,
+); */
+/*---------------------------------------------------- COLORS ----------------------------------------------------*/
+/* Menu & header colors */
+/* Font colors */
+/* Footer */
+/* Cart */
+/*---------------------------------------------------- FONTS ----------------------------------------------------*/
+/* Sizes */
+/*---------------------------------------------------- MEASURES ----------------------------------------------------*/
+/* UTILS */
+/* ELEMENTS */
+/*---------------------------------------------------- FORM ----------------------------------------------------*/
+/* line 11, ../sass/newsletter.scss */
+.newsletter-subscription-form-full-width {
+  padding-top: 1.125em;
+  padding-bottom: 1.5em;
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+}
+/* line 17, ../sass/newsletter.scss */
+.newsletter-subscription-form-full-width h3 {
+  color: #fff;
+}
+/* line 20, ../sass/newsletter.scss */
+.newsletter-subscription-form-full-width form {
+  margin: 0;
+  max-width: 67.141em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.newsletter-subscription-form-full-width form:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 26, ../sass/newsletter.scss */
+.newsletter-subscription-form-full-width label {
+  padding-right: 1.5em;
+  color: #fff;
+}
+/* line 31, ../sass/newsletter.scss */
+.newsletter-subscription-form-full-width .newsletter-field {
+  display: inline-block;
+}
+/* line 34, ../sass/newsletter.scss */
+.newsletter-subscription-form-full-width .newsletter-field input[type='text'], .newsletter-subscription-form-full-width .newsletter-field input[type='email'] {
+  width: 20em;
+}
+/* line 39, ../sass/newsletter.scss */
+.newsletter-subscription-form-full-width .newsletter-submit {
+  margin-left: -5px;
+}

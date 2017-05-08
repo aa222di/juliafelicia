@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'grids';
+@import 'mixins';
+
+
+/* COLOR ON STORE MESSAGES */
+body {
+  .woocommerce-info, .woocommerce-message {
+    background-color: $blue;
+  }
+
+  /* BORDER RADUIS ALL IMAGES */
+  img {
+    border-radius: 0;
+  }
+
+  /* HIDE TEXT IN LIGHTBOX */
+  .pp_pic_holder.pp_woocommerce {
+    padding-top: 1.5em;
+    .ppt {
+      position: absolute;
+      left:-9999px;
+    }
+  }
+
+}
+
+

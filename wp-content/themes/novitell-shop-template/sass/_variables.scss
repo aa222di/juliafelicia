@@ -1,0 +1,90 @@
+/*---------------------------------------------------- VARIABLES ----------------------------------------------------*/
+/*
+1. COLORS
+2. FONTS
+3. MEASURES
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+
+@import "compass";
+@import 'grids';
+
+/*---------------------------------------------------- COLORS ----------------------------------------------------*/
+
+$purple: #b24298;
+$yellow: #f5bb18;
+$green: #079c73;
+$red: #da3227;
+$blue: #0fa7db;
+
+// General theme colors
+$primary-color: #000;
+$secondary-color: $purple;
+
+$darkgrey: #2c2d33;
+$grey: #bfbfbf;
+$lightgrey: #f8f8f8;
+
+/* Menu & header colors */
+
+$menu-font-color: #000;
+$menu-background-color: #fff;
+$menu-font-hover-color: $green;
+
+$submenu-background-color: #fff;
+$submenu-font-color: $darkgrey;
+
+$header-background-color: #fff;
+
+
+/* Font colors */
+$body-font-color: $darkgrey;
+$heading-font-color: #000;
+$link-color: $green;
+
+/* Footer */
+$footer-background-color: $primary-color;
+$footer-text-color: #fff;
+
+$footer-bar-color: $secondary-color;
+
+
+/* Cart */
+$cart-background-color: #fff;
+$cart-text-color: $body-font-color;
+
+/*---------------------------------------------------- FONTS ----------------------------------------------------*/
+
+$body-font: 'Open Sans', sans-serif;;
+$heading-font: "Raleway", sans-serif;
+
+$menu-font: "Raleway", sans-serif;
+
+/* Sizes */
+$tiniest-fz: 12px;
+$tiny-fz: 14px;
+$body-fz: 16px;
+$line-height: 24px;
+$h1-fz: 36px;
+$h2-fz: 26px;
+$h3-fz: 24px;
+$h4-fz: 21px;
+$h5-fz: 16px;
+$h6-fz: 16px;
+
+
+
+
+/*---------------------------------------------------- MEASURES ----------------------------------------------------*/
+
+$ipad: 769px;
+
+// IMPORTED FROM PARENT THEME
+// layout sizes
+$vspacing: 			1.618em;
+$bigdesktop:		1023px;
+$desktop:			768px;
+
+$handheld:			568px;
+$container-width:	67.141em;
+

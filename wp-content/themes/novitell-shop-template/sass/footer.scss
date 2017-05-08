@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'grids';
+@import 'mixins';
+
+
+.site-footer {
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+  position: relative;
+
+  .footer-widgets {
+    border: none;
+  }
+
+
+
+  .widget_nav_menu {
+    .menu-item {
+      @include rhythm-margins(0, 0, $body-fz);
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    color: $footer-text-color !important;
+    text-decoration: underline;
+    font-weight: normal;
+    &:before {
+      display: none;
+    }
+  }
+
+  h1, h2, h3, h4 , h5, h6 {
+    color: $footer-text-color;
+  }
+}
+
+@media (max-width: 767px){
+
+    .footer-widgets {
+      padding-top: 2em;
+    }
+
+
+}

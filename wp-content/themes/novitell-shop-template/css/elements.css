@@ -1,0 +1,44 @@
+/*---------------------------------------------------- VARIABLES ----------------------------------------------------*/
+/*
+1. COLORS
+2. FONTS
+3. MEASURES
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*$susy: (
+  columns: 12,
+  gutters: 1/4,
+); */
+/*---------------------------------------------------- COLORS ----------------------------------------------------*/
+/* Menu & header colors */
+/* Font colors */
+/* Footer */
+/* Cart */
+/*---------------------------------------------------- FONTS ----------------------------------------------------*/
+/* Sizes */
+/*---------------------------------------------------- MEASURES ----------------------------------------------------*/
+/* UTILS */
+/* ELEMENTS */
+/* COLOR ON STORE MESSAGES */
+/* line 7, ../sass/elements.scss */
+body {
+  /* BORDER RADUIS ALL IMAGES */
+  /* HIDE TEXT IN LIGHTBOX */
+}
+/* line 8, ../sass/elements.scss */
+body .woocommerce-info, body .woocommerce-message {
+  background-color: #0fa7db;
+}
+/* line 13, ../sass/elements.scss */
+body img {
+  border-radius: 0;
+}
+/* line 18, ../sass/elements.scss */
+body .pp_pic_holder.pp_woocommerce {
+  padding-top: 1.5em;
+}
+/* line 20, ../sass/elements.scss */
+body .pp_pic_holder.pp_woocommerce .ppt {
+  position: absolute;
+  left: -9999px;
+}

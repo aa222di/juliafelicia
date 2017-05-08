@@ -1,0 +1,53 @@
+/*---------------------------------------------------- BLOG ----------------------------------------------------*/
+/*
+
+
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+@import 'variables';
+@import 'mixins';
+
+.blog, .single {
+
+  .entry-header, .hentry {
+    @include container($container-width);
+    border-bottom: 1px solid $lightgrey;
+    .entry-content {
+      @include span(12);
+    }
+  }
+
+  .entry-header {
+    margin-bottom: 0;
+  }
+
+  .entry-title {
+    @include span(12);
+    border-bottom: 1px solid $lightgrey;
+    margin-bottom: 0;
+  }
+
+
+
+  .posted-on {
+    @include span(6);
+  }
+  .comments-link {
+    @include span(last 6);
+    text-align: right;
+  }
+
+  .posted-on, .comments-link {
+    font-size: initial;
+    @include adjust-font-size-to($tiny-fz);
+    @include rhythm(0.5);
+
+
+    a {
+      font-weight: 300;
+      font-size: 1em;
+      text-decoration: underline;
+    }
+
+  }
+}

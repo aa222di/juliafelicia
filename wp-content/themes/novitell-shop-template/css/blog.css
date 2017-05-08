@@ -1,0 +1,89 @@
+/*---------------------------------------------------- BLOG ----------------------------------------------------*/
+/*
+
+
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*---------------------------------------------------- VARIABLES ----------------------------------------------------*/
+/*
+1. COLORS
+2. FONTS
+3. MEASURES
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*$susy: (
+  columns: 12,
+  gutters: 1/4,
+); */
+/*---------------------------------------------------- COLORS ----------------------------------------------------*/
+/* Menu & header colors */
+/* Font colors */
+/* Footer */
+/* Cart */
+/*---------------------------------------------------- FONTS ----------------------------------------------------*/
+/* Sizes */
+/*---------------------------------------------------- MEASURES ----------------------------------------------------*/
+/* UTILS */
+/* ELEMENTS */
+/* line 12, ../sass/blog.scss */
+.blog .entry-header, .blog .hentry, .single .entry-header, .single .hentry {
+  max-width: 67.141em;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #f8f8f8;
+}
+/* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.blog .entry-header:after, .blog .hentry:after, .single .entry-header:after, .single .hentry:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 15, ../sass/blog.scss */
+.blog .entry-header .entry-content, .blog .hentry .entry-content, .single .entry-header .entry-content, .single .hentry .entry-content {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 20, ../sass/blog.scss */
+.blog .entry-header, .single .entry-header {
+  margin-bottom: 0;
+}
+/* line 24, ../sass/blog.scss */
+.blog .entry-title, .single .entry-title {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 1px solid #f8f8f8;
+  margin-bottom: 0;
+}
+/* line 32, ../sass/blog.scss */
+.blog .posted-on, .single .posted-on {
+  width: 47.82609%;
+  float: left;
+  margin-right: 4.34783%;
+}
+/* line 35, ../sass/blog.scss */
+.blog .comments-link, .single .comments-link {
+  width: 47.82609%;
+  float: right;
+  margin-right: 0;
+  text-align: right;
+}
+/* line 40, ../sass/blog.scss */
+.blog .posted-on, .blog .comments-link, .single .posted-on, .single .comments-link {
+  font-size: initial;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  margin-top: 0.75em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.75em;
+}
+/* line 46, ../sass/blog.scss */
+.blog .posted-on a, .blog .comments-link a, .single .posted-on a, .single .comments-link a {
+  font-weight: 300;
+  font-size: 1em;
+  text-decoration: underline;
+}

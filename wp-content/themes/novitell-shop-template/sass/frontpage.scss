@@ -1,0 +1,192 @@
+/*---------------------------------------------------- PRODUCTS ----------------------------------------------------*/
+/*
+
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+@import 'variables';
+@import 'mixins';
+
+/*---------------------------------------------------- PRODUCT CATALOGUE ----------------------------------------------------*/
+
+
+  /* NOVITELL SPECIAL CATEGORIES */
+  .novitell-special-product-categories {
+    @include clearfix();
+    display: flex;
+    flex-direction: row;
+
+  }
+  a[class^="novitell-special-product-categories__container--"], a[class*=" novitell-special-product-categories__container--"] {
+    @include span(4 inside);
+    //background-image: url('../images/background-female.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 33vw;
+    display: block;
+    opacity: 1;
+    transition: opacity .5s ease;
+    position: relative;
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+      .novitell-special-product-categories__title {
+        background-color: rgba(255,255,255,0);
+      }
+    }
+  }
+  .novitell-special-product-categories__container--female {
+    background-image: url('../images/background-female.jpg');
+    order: 2;
+  }
+
+  .novitell-special-product-categories__container--man {
+    background-image: url('../images/background-man.jpg');
+    order: 1;
+  }
+
+  .novitell-special-product-categories__container--child {
+    background-image: url('../images/background-child.jpg');
+    order: 3;
+  }
+
+  .novitell-special-product-categories__box {
+
+    position: absolute;
+    left: rhythm();
+    right: rhythm();
+    top:45%;
+    text-align: center;
+  }
+  .novitell-special-product-categories__title {
+    @include adjust-font-size-to($h4-fz);
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: rhythm(0.25);
+    font-weight: 500;
+    background-color: rgba(0,0,0,0.1);
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+    transition: background-color .5s ease;
+    @include adjust-leading-to(1);
+  }
+
+  /* SECTION TITLE */
+  .home section {
+    &:nth-of-type(odd) {
+      .section-title {
+        //background-color: $green;
+      }
+    }
+  }
+  .section-title {
+    padding: rhythm();
+    color: #fff;
+    margin-right: -99em;
+    margin-left: -99em;
+    padding-left: 99em;
+    padding-right: 99em;
+    position: relative;
+    background-color: #000;
+  }
+
+  /* NOVITELL FEATURED PRODUCTS */
+@include susy-media($desktop) {
+  .novitell-puff-featured-products__list--odd, .novitell-puff-featured-products__list--even {
+    display: flex;
+  }
+
+}
+  .novitell-puff-featured-products__list--odd {
+    display: flex;
+  }
+  .novitell-puff-featured-products__list--odd, .novitell-puff-featured-products__list--even  {
+     @include resetMargin();
+   }
+
+
+  .novitell-puff-featured-products__list--even .novitell-puff-featured-products__product {
+      width: 50%;
+      float: left;
+  }
+  .novitell-puff-featured-products__product {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+    }
+  .novitell-puff-featured-products__list--even .novitell-puff-featured-products__product {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 50%;
+    float: left;
+  }
+
+  .novitell-puff-featured-products__puff-image {
+    position: relative;
+    z-index: 7;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+  }
+
+  .novitell-puff-featured-products__product-image {
+    position: absolute;
+    top:-100%;
+    //transition: top .25s ease-out;
+
+  }
+
+  .novitell-puff-featured-products__short-description {
+    position: absolute;
+    width: 100%;
+    padding: rhythm(0.5);
+    left:0;
+    right: 0;
+    bottom: -100%;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    transition: bottom .5s ease-out;
+    background-color: transparentize($blue, 0.2);
+    @include adjust-font-size-to($body-fz);
+    @include adjust-leading-to(1);
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border-right: 300px solid transparent;
+      left: 0;
+      right: 0;
+      background-color: transparent;
+    }
+    &:after {
+      bottom: -15px;
+      border-top: 15px solid transparentize($blue, 0.2);
+    }
+    &:before {
+      top: -15px;
+      border-bottom: 15px solid transparentize($blue, 0.2);
+    }
+  }
+
+  .novitell-puff-featured-products__link {
+    display: block;
+    &:hover {
+      .novitell-puff-featured-products__product-image {
+        top:0;
+      }
+      .novitell-puff-featured-products__short-description {
+        bottom: 0;
+      }
+      .novitell-puff-featured-products__puff-image {
+        opacity: 0;
+      }
+    }
+    img {
+      display: block;
+    }
+  }

@@ -1,0 +1,110 @@
+/*---------------------------------------------------- RESPONSIVE ----------------------------------------------------*/
+/*
+
+
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+@import 'variables';
+@import 'mixins';
+
+@include susy-media(max-width $bigdesktop) {
+  .woocommerce-active .site-header {
+    .storefront-primary-navigation {
+
+    }
+    .custom-logo-link {
+
+    }
+  }
+
+  .novitell-special-product-categories__title {
+    @include adjust-font-size-to($h6-fz);
+    @include adjust-leading-to(1);
+  }
+
+  .novitell-special-product-categories__box {
+    top: 35%;
+  }
+}
+
+@include susy-media(max-width $desktop) {
+
+}
+
+@include susy-media(max-width $ipad) {
+
+  /* Smaller title on products in catalogue */
+  body .site-main ul.products li.product {
+    .product__info-container {
+      @include adjust-font-size-to($tiny-fz);
+      @include adjust-leading-to(1);
+
+      h3 {
+
+      }
+    }
+  }
+
+}
+
+@include susy-media(max-width $handheld) {
+
+  /* FULL WIDTH PRODUCTS IN PRODUCT CATALOGUE */
+  body .site-main ul.products li.product {
+    @include span(12);
+
+    .product__info-container .add_to_cart_button {
+      background-size: 10%;
+    }
+  }
+
+  /* FULL WIDTH NOVITELL SPECIAL CATEGORIES BOXES */
+
+  .novitell-special-product-categories {
+    display: block;
+  }
+
+  a[class^="novitell-special-product-categories__container--"], a[class*=" novitell-special-product-categories__container--"] {
+    @include span(12 inside );
+  }
+  a.novitell-special-product-categories__container--female {
+    background-position-y: 4% ;
+  }
+
+  a.novitell-special-product-categories__container--man {
+    background-position-y: 27%;
+  }
+
+  a.novitell-special-product-categories__container--child {
+    background-position-y: 27%;
+  }
+
+  .novitell-special-product-categories__title {
+    @include adjust-font-size-to($tiny-fz);
+    @include adjust-leading-to(1);
+  }
+
+  .novitell-special-product-categories__box {
+    top: 30%;
+  }
+
+  /* SLIDER BACKGROUND IMAGE */
+
+  .slider-wrapper:after {
+    background-size: 100% 100%;
+    height: 50px;
+    bottom: -25px;
+  }
+
+  /* BUY BUTTON BACKGROUND IMAGE */
+  .products .product .product__info-container .add_to_cart_button {
+    background-size: 10%;
+  }
+
+  /* Move caption on slider */
+  body  .nivo-caption {
+    position: initial !important;
+    opacity:1;
+
+  }
+}

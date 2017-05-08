@@ -1,0 +1,92 @@
+@import 'variables';
+@import 'mixins';
+// Compass Vertical Rhythm Settings
+$base-font-size: $body-fz; // Sets the base font size
+$base-line-height: $line-height; // Sets the base line height
+$round-to-nearest-half-line: true; // Allows compass to round to  multiples of 0.5x line height
+$rhythm-unit: "rem"; // Sets rhythm unit to rem. Remove to use default em unit.
+$rem-with-px-fallback: true;
+// Establishes baseline with Compass.
+@include establish-baseline;
+
+
+
+body {
+  font-family: $body-font;
+  @include adjust-font-size-to($body-fz);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+h1 {
+  @include adjust-font-size-to($h1-fz);
+  @include rhythm(0.5);
+}
+
+
+h2 {
+  @include adjust-font-size-to($h2-fz);
+  @include rhythm(0.5);
+}
+
+h3 {
+  @include adjust-font-size-to($h3-fz);
+  @include rhythm(0.5);
+}
+
+h4 {
+  @include adjust-font-size-to($h4-fz);
+  @include rhythm(0.5);
+}
+
+h5 {
+  @include adjust-font-size-to($h5-fz);
+  @include rhythm(0.5);
+}
+
+h6 {
+  @include adjust-font-size-to($h6-fz);
+}
+
+p {
+  @include rhythm(0.5);
+}
+
+p+h1 {
+  @include leader(2);
+}
+
+p+h2, p+h3, p+h4 {
+  @include leader(1);
+}
+
+blockquote {
+  @include rhythm();
+  @include apply-side-rhythm-border(left, 4px);
+  border-color: $lightgrey;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  &:first-child {
+    margin-top: 0;
+    //@include adjust-leading-to(2);
+  }
+
+}
+
+a:focus {
+  outline: none;
+}
+
+.entry-content a, .entry-summary a {
+  color: $link-color;
+}
+

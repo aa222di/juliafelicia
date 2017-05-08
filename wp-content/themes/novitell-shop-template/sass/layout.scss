@@ -1,0 +1,48 @@
+/*---------------------------------------------------- LAYOUT ----------------------------------------------------*/
+/*
+
+
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+@import 'variables';
+@import 'mixins';
+
+
+/* SPECIAL FOR FRONT PAGE */
+.home.page {
+
+  .site-header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .site-content .col-full {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+
+    .content-area {
+      //@include container($container-width);
+      float: none;
+      width: auto;
+      margin: auto;
+
+      .site-main {
+        //@include span(12);
+      }
+    }
+
+    article.type-page, .storefront-product-section  {
+      @include container($container-width);
+      padding:  0 rhythm();
+
+      .entry-header, .entry-meta, .woocommerce.columns-3, .woocommerce.columns-4 {
+        @include span(12);
+      }
+    }
+  }
+
+  .newsletter-subscription-form-full-width {
+    margin-bottom: 4.236em;
+  }
+}

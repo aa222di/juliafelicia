@@ -1,0 +1,93 @@
+*** Payson Changelog ***
+
+2016.06.08 	- version 1.6.4
+ * Fix		- Remove deprecated code - get_order_discount().
+ * Misc		- WooCommerce 2.6 Compatibility.
+
+2016.03.23 	- version 1.6.3
+ * Tweak	- Send each order row to Payson for direct payments (Paysondirect). Added setting for making it possible to only send order total as in previous versions.
+ * Tweak	- Adds Application ID sent to Payson.
+ * Tweak	- Send product name as max 128 characters to Payson to avoid error notice from Payson.
+ * Fix		- Fixed PHP notice for Sequential Order Numbers Pro helper function find_order_by_order_number() & instructions in order email.
+ 
+2016.01.28 	- version 1.6.2
+ * Fix      - Fixes WooCommerce Sequential Order Number Pro compatibility.
+
+2015.12.11 	- version 1.6.1
+ * Tweak	- Improved callback/IPN handling to avoid callbacks from two different orders in Payson that has got the same order ID in WooCommerce.
+ * Tweak	- Added Payson transaction id to $order->payment_complete().
+ 
+2015.11.23 	- version 1.6
+ * Feature	- Added setting (for both Invoice & Direct payment method) for merchants to add their personalized instructions in order confirmation emails sent to customer. 
+ * Tweak	- Fixes an undefined variable notice in Invoice & Direct class.
+
+2015.07.14 	- version 1.5.2
+ * Tweak	- Added check for Payson status PROCESSING in token callback to avoid displaying successful Order received page when the order isn't completed correctly.
+ * Tweak	- Added check for Payson status PENDING in token callback to avoid displaying successful Order received page when the order isn't completed correctly.
+ * Tweak	- Added check for Payson status PENDING in token callback to be able to catch and display the correct status for Guarantee payments.
+ 
+2015.03.05 	- version 1.5.1
+ * Fix		- Switches to using wc_add_notice instead of add_error.
+
+2015.01.30 	- version 1.5
+ * Fix		- Change in how Order ID is retrieved in token_callback. Better support for quicker order status changes when purchase is canceled/declined (Payson Direct).
+ * Fix		- Check for Payson status COMPLETED even in token callback (customer redirect back to store).
+ * Fix		- Added html_entity_decode() to URL's sent to Payson.
+ * Tweak	- Better formatting of error messages sent from Payson back to store.
+
+2014.09.18 	- version 1.4.9
+ * Misc		- WooCommerce 2.2 Compatibility
+ * Misc		- Dropped support for 2.0.x
+ * Feature	- Added setting for whether to show the receipt page in Paysons checkout after completed purchase.
+ * Tweak	- Checking if payment already is marked as Processing or Completed in WC before marking it as failed on IPN callback from Payson.
+ * Misc		- Updated Payson lib files to latest version.
+
+2014.06.24 	- version 1.4.8
+ * Fix		- Added get_order_id() function for better Sequential Order Numbers Pro support.
+
+2014.02.04 - version 1.4.7
+ * Feature	- Added support for Sequential Order Numbers Pro.
+ * Tweak 	- Improved invoice fee display on checkout page (Payson invoice).
+ * Fix		- WooCommerce 2.1 compatibility
+ 
+2013.11.15 - version 1.4.6
+ * Feature	- Paysons test system can now be used. Updated Payson API (v1.1) in the plugin.
+ * Bugfix	- Better callback support when direct bank payments are being canceled/rejected.
+ * Tweak	- Confirmed that the plugin works with Paysons new payment window.
+ * Tweak	- Added apply_filters on AgentID, SellerEmail & MD5.
+ 
+2013.04.22 - version 1.4.5
+ * Removed Shop base country check in function is_available() (in both Payson Direct and Payson Invoice). 
+
+2013.04.22 - version 1.4.4
+ * Bugfix 	- Updated check if invoice fee is used in function payson_add_invoice_fee_process() for Payson invoice.
+
+2013.02.06 - version 1.4.3
+ * WC version 2.0 compat.
+
+2012.12.12 - version 1.4.2
+ * Moved Icon declaration to the invoice class and direct class. Added apply_filters to icons so they could be overwritten.
+ * Updated Payson lib files. Bug in currency sent to Payson (caused problems with Finland/EUR).
+ 
+2012.12.05 - version 1.4.1
+ * Updater
+
+2012.06.15 - version 1.4
+ * Bug fix in shipping calculation sent to Payson when shipping is taxable.
+
+2012.04.26 - version 1.3
+ * Improved handlig of invoice fee for Payson Invoice. The gateway now uses a simple (hidden) product that acts as invoice fee.
+ 
+
+2012.03.29 - version 1.2
+ * Bug fix in is_available().
+ * Better IPN handling for rejected payments.
+ 
+ 2012.03.08 - version 1.1
+ * Changed from Payson Agent Integration to Payson API
+ * Added Payson Invoice
+ * Added Payson Guarantee feature
+ * Added Woo Updater
+ 
+2011.09.27 - version 1.0
+ * First Release

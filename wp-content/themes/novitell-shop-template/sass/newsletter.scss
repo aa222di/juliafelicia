@@ -1,0 +1,52 @@
+/*---------------------------------------------------- NEWSLETTER ----------------------------------------------------*/
+/*
+
+
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+@import 'variables';
+@import 'mixins';
+
+/*---------------------------------------------------- FORM ----------------------------------------------------*/
+.newsletter-subscription-form-full-width {
+  @include rhythm-padding(0.75, 1);
+  background-color: $primary-color;
+  width: 100%;
+  text-align: center;
+
+  h3 {
+    color: #fff;
+  }
+  form {
+    margin: 0;
+    @include container($container-width);
+    //display: inline-block;
+  }
+
+  label {
+    padding-right: rhythm();
+    color: #fff;
+  }
+
+  .newsletter-field {
+    display:inline-block;
+
+    input[type='text'], input[type='email'] {
+      width: 20em;
+    }
+  }
+
+  .newsletter-submit {
+    margin-left: -5px;
+  }
+
+  .newsletter-field-name {
+
+  }
+  .newsletter-field-email {
+
+  }
+  .newsletter-field-button {
+
+  }
+}

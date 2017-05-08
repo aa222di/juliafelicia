@@ -1,0 +1,128 @@
+/*---------------------------------------------------- RESPONSIVE ----------------------------------------------------*/
+/*
+
+
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*---------------------------------------------------- VARIABLES ----------------------------------------------------*/
+/*
+1. COLORS
+2. FONTS
+3. MEASURES
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*$susy: (
+  columns: 12,
+  gutters: 1/4,
+); */
+/*---------------------------------------------------- COLORS ----------------------------------------------------*/
+/* Menu & header colors */
+/* Font colors */
+/* Footer */
+/* Cart */
+/*---------------------------------------------------- FONTS ----------------------------------------------------*/
+/* Sizes */
+/*---------------------------------------------------- MEASURES ----------------------------------------------------*/
+/* UTILS */
+/* ELEMENTS */
+@media (max-width: 1023px) {
+  /* line 20, ../sass/responsive.scss */
+  .novitell-special-product-categories__title {
+    font-size: 1em;
+    line-height: 1.5em;
+    line-height: 1.5em;
+  }
+
+  /* line 25, ../sass/responsive.scss */
+  .novitell-special-product-categories__box {
+    top: 35%;
+  }
+}
+@media (max-width: 769px) {
+  /* Smaller title on products in catalogue */
+  /* line 38, ../sass/responsive.scss */
+  body .site-main ul.products li.product .product__info-container {
+    font-size: 0.875em;
+    line-height: 1.71429em;
+    line-height: 1.5em;
+  }
+}
+@media (max-width: 568px) {
+  /* FULL WIDTH PRODUCTS IN PRODUCT CATALOGUE */
+  /* line 53, ../sass/responsive.scss */
+  body .site-main ul.products li.product {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 56, ../sass/responsive.scss */
+  body .site-main ul.products li.product .product__info-container .add_to_cart_button {
+    background-size: 10%;
+  }
+
+  /* FULL WIDTH NOVITELL SPECIAL CATEGORIES BOXES */
+  /* line 63, ../sass/responsive.scss */
+  .novitell-special-product-categories {
+    display: block;
+  }
+
+  /* line 67, ../sass/responsive.scss */
+  a[class^="novitell-special-product-categories__container--"], a[class*=" novitell-special-product-categories__container--"] {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 2.08333%;
+    padding-right: 2.08333%;
+  }
+
+  /* line 70, ../sass/responsive.scss */
+  a.novitell-special-product-categories__container--female {
+    background-position-y: 4%;
+  }
+
+  /* line 74, ../sass/responsive.scss */
+  a.novitell-special-product-categories__container--man {
+    background-position-y: 27%;
+  }
+
+  /* line 78, ../sass/responsive.scss */
+  a.novitell-special-product-categories__container--child {
+    background-position-y: 27%;
+  }
+
+  /* line 82, ../sass/responsive.scss */
+  .novitell-special-product-categories__title {
+    font-size: 0.875em;
+    line-height: 1.71429em;
+    line-height: 1.5em;
+  }
+
+  /* line 87, ../sass/responsive.scss */
+  .novitell-special-product-categories__box {
+    top: 30%;
+  }
+
+  /* SLIDER BACKGROUND IMAGE */
+  /* line 93, ../sass/responsive.scss */
+  .slider-wrapper:after {
+    background-size: 100% 100%;
+    height: 50px;
+    bottom: -25px;
+  }
+
+  /* BUY BUTTON BACKGROUND IMAGE */
+  /* line 100, ../sass/responsive.scss */
+  .products .product .product__info-container .add_to_cart_button {
+    background-size: 10%;
+  }
+
+  /* Move caption on slider */
+  /* line 105, ../sass/responsive.scss */
+  body .nivo-caption {
+    position: initial !important;
+    opacity: 1;
+  }
+}

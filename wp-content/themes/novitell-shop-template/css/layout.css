@@ -1,0 +1,69 @@
+/*---------------------------------------------------- LAYOUT ----------------------------------------------------*/
+/*
+
+
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*---------------------------------------------------- VARIABLES ----------------------------------------------------*/
+/*
+1. COLORS
+2. FONTS
+3. MEASURES
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*$susy: (
+  columns: 12,
+  gutters: 1/4,
+); */
+/*---------------------------------------------------- COLORS ----------------------------------------------------*/
+/* Menu & header colors */
+/* Font colors */
+/* Footer */
+/* Cart */
+/*---------------------------------------------------- FONTS ----------------------------------------------------*/
+/* Sizes */
+/*---------------------------------------------------- MEASURES ----------------------------------------------------*/
+/* UTILS */
+/* ELEMENTS */
+/* SPECIAL FOR FRONT PAGE */
+/* line 14, ../sass/layout.scss */
+.home.page .site-header {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+/* line 19, ../sass/layout.scss */
+.home.page .site-content .col-full {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 24, ../sass/layout.scss */
+.home.page .site-content .col-full .content-area {
+  float: none;
+  width: auto;
+  margin: auto;
+}
+/* line 35, ../sass/layout.scss */
+.home.page .site-content .col-full article.type-page, .home.page .site-content .col-full .storefront-product-section {
+  max-width: 67.141em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5em;
+}
+/* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.home.page .site-content .col-full article.type-page:after, .home.page .site-content .col-full .storefront-product-section:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 39, ../sass/layout.scss */
+.home.page .site-content .col-full article.type-page .entry-header, .home.page .site-content .col-full article.type-page .entry-meta, .home.page .site-content .col-full article.type-page .woocommerce.columns-3, .home.page .site-content .col-full article.type-page .woocommerce.columns-4, .home.page .site-content .col-full .storefront-product-section .entry-header, .home.page .site-content .col-full .storefront-product-section .entry-meta, .home.page .site-content .col-full .storefront-product-section .woocommerce.columns-3, .home.page .site-content .col-full .storefront-product-section .woocommerce.columns-4 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 45, ../sass/layout.scss */
+.home.page .newsletter-subscription-form-full-width {
+  margin-bottom: 4.236em;
+}
