@@ -1,0 +1,188 @@
+/*---------------------------------------------------- VARIABLES ----------------------------------------------------*/
+/*
+1. COLORS
+2. FONTS
+3. MEASURES
+*/
+/*---------------------------------------------------- IMPORTS ----------------------------------------------------*/
+/*$susy: (
+  columns: 12,
+  gutters: 1/4,
+); */
+/*---------------------------------------------------- COLORS ----------------------------------------------------*/
+/* Menu & header colors */
+/* Font colors */
+/* Footer */
+/* Cart */
+/*---------------------------------------------------- FONTS ----------------------------------------------------*/
+/* Sizes */
+/*---------------------------------------------------- MEASURES ----------------------------------------------------*/
+/* UTILS */
+/* ELEMENTS */
+/* line 106, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 14, ../sass/typography.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+
+/* line 20, ../sass/typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+/* line 27, ../sass/typography.scss */
+h1 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 48px;
+  line-height: 3rem;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+
+/* line 33, ../sass/typography.scss */
+h2 {
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+
+/* line 38, ../sass/typography.scss */
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+
+/* line 43, ../sass/typography.scss */
+h4 {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+
+/* line 48, ../sass/typography.scss */
+h5 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+
+/* line 53, ../sass/typography.scss */
+h6 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+
+/* line 57, ../sass/typography.scss */
+p {
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+
+/* line 61, ../sass/typography.scss */
+p + h1 {
+  margin-top: 48px;
+  margin-top: 3rem;
+}
+
+/* line 65, ../sass/typography.scss */
+p + h2, p + h3, p + h4 {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+
+/* line 69, ../sass/typography.scss */
+blockquote {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  border-left-width: 4px;
+  border-left-width: 0.25rem;
+  border-left-style: solid;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  border-color: #f8f8f8;
+}
+
+/* line 78, ../sass/typography.scss */
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+}
+
+/* line 85, ../sass/typography.scss */
+a:focus {
+  outline: none;
+}
+
+/* line 89, ../sass/typography.scss */
+.entry-content a, .entry-summary a {
+  color: #079c73;
+  text-decoration: none;
+}

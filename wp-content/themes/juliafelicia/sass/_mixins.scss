@@ -1,0 +1,43 @@
+@import 'variables';
+
+/* UTILS */
+
+@mixin resetMargin() {
+  margin-right:   0;
+  margin-left:    0;
+  margin-bottom:  0;
+  margin-top:     0;
+}
+
+@mixin resetPadding() {
+  padding-right:   0;
+  padding-left:    0;
+  padding-bottom:  0;
+  padding-top:     0;
+}
+
+@mixin stretch() {
+  padding-right:   99em;
+  padding-left:    99em;
+  margin-right:   -99em;
+  margin-left:    -99em;
+}
+
+
+
+/* ELEMENTS */
+
+@mixin button( $background-color: $link-color, $text-color:#fff ) {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: 'Raleway', sans-serif;
+  font-weight:500;
+  &:hover {
+    background-color: darken($background-color, 5);
+    color: $text-color;
+  }
+}
+
+@mixin shadow() {
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
